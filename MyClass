@@ -1,0 +1,28 @@
+public class MyClass {
+
+    @BeforeSuite
+    public static void start(){
+        System.out.println("Start");
+    }
+
+    @Test(priority = 8)
+    public static void test1(){
+        System.out.println("test1");
+    }
+    @Test(priority = 7)
+    public static void test2(){
+        System.out.println("test2");
+    }
+    @Test(priority = 2)
+    public static void test7(){
+        System.out.println("test3");
+    }
+    @Test(priority = 1)
+    public static void test8(){
+        System.out.println("test4");
+    }
+    @AfterSuite
+    public static void test(){
+        System.out.println("test");
+    }
+}
